@@ -53,9 +53,10 @@ table {
 */
 :root {
 	--red: #81281e;
+	--light-red: #bb5752;
 	--yellow: #e0a562;
 	--brown: #8f5e44;
-	--darker-brown: #6f4934;
+	--darker-brown: #533727;
 	--light-blue: #516cb2;
 	--teal: #7aa1b1;
 	--lighter-charcoal: #314c57;
@@ -150,11 +151,17 @@ cite, em {
   ========================================
 */
 a:hover {
-  color: var(--red);
+  color: var(--darker-brown);
 }
 a {
   color: var(--brown);
 	text-decoration: none;
+}
+.logo a {
+	color: var(--red);
+}
+.logo a:hover {
+	color: var(--darker-brown);
 }
 p a {
 	border-bottom: 1px solid var(--teal);
@@ -192,7 +199,7 @@ p a {
   padding: 66px 0 44px 0;
 }
 .row-alt {
-	background: var(--red);
+	background: #dce0e5;
 	padding: 44px 0 22px 0;
 }
 /*
@@ -220,8 +227,8 @@ p a {
   ========================================
 */
 .primary-footer {
-  padding-bottom: 44px;
-	padding-top: 44px;
+  padding-bottom: 22px;
+	padding-top: 22px;
 	color: var(--red);
 	font-size: 14px;
 }
@@ -241,7 +248,7 @@ p a {
 }
 .nav li {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 8px;
 	vertical-align: top;
 }
 .nav li:last-child {
@@ -275,7 +282,30 @@ p a {
 img.teaser {
 	display: none;
 }
-. /
+*/
+/*
+  ========================================
+  Recipe pages
+  ========================================
+*/
+.lead {
+	text-align: center;
+	font-size: 18px;
+	line-height: 33px;
+}
+.recipe-info li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.recipe-info li:last-child {
+	margin-right: 0;
+}
+.recipe-info strong {
+	color: #fff;
+	font-weight: 300;
+}
+
 /*
   ========================================
   Images
