@@ -60,13 +60,32 @@ table {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.container {
+.container,
+.grid {
 	width: 960px;
+		margin: 0 auto;
+}
+.container {
 	padding-left: 30px;
 	padding-right: 30px;
-	margin: 0 auto;
 }
-
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
 /*
   ========================================
   Typography
@@ -89,6 +108,45 @@ h1, h3, h4, h5, p {
 
 /*
   ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+.logo {
+  border-top: 4px solid #000;
+  padding: 40px 0 22px 0;
+  float: left;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  padding-bottom: 44px;
+	padding-top: 44px;
+}
+/*
+  ========================================
   Images
   ========================================
 */
@@ -98,5 +156,6 @@ img.page {
 }
 
 img.teaser {
-	width: 200px;
+	width: 280px;
+	height: 420px;
 }

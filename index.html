@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="container">
-      <h1>
-        <a href="index.html">Breakfast Dankness</a>
+    <header class="container group">
+      <h1 class="logo">
+        <a href="index.html">Breakfast <br> Dankness</a>
       </h1>
       <h3>Only the dankest breakfast recipes</h3>
       <nav>
@@ -24,27 +24,33 @@
       <p>Many people wake up and don't know what to eat for breakfast and default to the usual sardines and old pasta water. But did you know that since 1982 you are legally allowed to eat other foods for breakfast? Here are some interesting new suggestions. They may seem weird but give them a try!</p>
     </section>
 
-    <section class="containter">
+    <section class="grid">
 
-      <section class="container">
+      <!-- French Toast-->
+
+      <section class="col-1-3">
         <a href="recipes/french-toast.html">
           <h5>French Toast</h5>
           <img class="teaser" src="img/french-toast.jpg">
           <h3>Toast imported from France</h3>
         </a>
         <p>If you've ever felt like your bread wasn't French enough, this is for you.</p>
-      </section>
+      </section><!--
 
-      <section class="container">
+      Waffles
+
+      --><section class="col-1-3">
         <a href="recipes/waffles.html">
           <h5>Waffles</h5>
           <img class="teaser" src="img/waffles.jpg">
           <h3>A fractal syrup prison</h3>
         </a>
         <p>A traditional dish using only the freshest waffle cones from the Baskin-Robbins tree.</p>
-      </section>
+      </section><!--
 
-      <section class="container">
+      Pancakes
+
+      --><section class="col-1-3">
         <a href="recipes/pancakes.html">
           <h5>Pancakes</h5>
           <img class="teaser" src="img/pancakes.jpg">
@@ -54,7 +60,7 @@
       </section>
 
     </section>
-    <footer class="container">
+    <footer class="primary-footer container group">
       <nav>
         <a href="index.html">Home</a>
         <a href="recipes/french-toast.html">French Toast</a>
