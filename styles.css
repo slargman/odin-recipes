@@ -82,8 +82,8 @@ body {
 }
 .container,
 .grid {
-	width: 960px;
-		margin: 0 auto;
+	width: 1080px;
+	margin: 0 auto;
 }
 .container {
 	padding-left: 30px;
@@ -201,7 +201,7 @@ p a {
   ========================================
 */
 .row {
-	min-width: 960px;
+	min-width: 1080px;
   background: #fff;
   padding: 66px 0 44px 0;
 }
@@ -314,6 +314,17 @@ img.teaser {
 .recipe-info strong {
 	color: #fff;
 	font-weight: 300;
+}
+.ingredients ul {
+	list-style: disc;
+	margin-left: 20px;
+}
+.steps ol{
+	list-style: decimal;
+	margin-left: 15px;
+}
+.steps li{
+	margin-bottom: 10px
 }
 
 /*
