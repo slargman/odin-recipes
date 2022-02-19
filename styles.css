@@ -46,13 +46,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+:root {
+	--red: #81281e;
+	--yellow: #e0a562;
+	--brown: #8f5e44;
+	--darker-brown: #6f4934;
+	--light-blue: #516cb2;
+	--teal: #7aa1b1;
+	--lighter-charcoal: #314c57;
+	--charcoal: #333f4c;
+	--darker-charcoal: #353c46;
+}
+body {
+  color: var(--darker-charcoal);
+  font: 300 16px/22px Raleway, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 /*
   ========================================
   Grid
   ========================================
 */
-
 *,
 *:before,
 *:after {
@@ -91,21 +109,55 @@ table {
   Typography
   ========================================
 */
-
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
+}
+h1, h2, h3, h4 {
+  color: var(--light-blue);
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 400;
+	text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
 }
 
 /*
   ========================================
-  Home
+  Links
   ========================================
 */
-
-.hero {
-  padding: 22px 80px 66px 80px;
+a:hover {
+  color: var(--darker-brown);
 }
-
+a {
+  color: var(--brown);
+	text-decoration: none;
+}
+p a {
+	border-bottom: 1px solid var(--teal);
+}
 /*
   ========================================
   Clearfix
@@ -123,27 +175,71 @@ h1, h3, h4, h5, p {
   clear: both;
   *zoom: 1;
 }
-
 /*
   ========================================
   Primary header
   ========================================
 */
+header {
+	background-color: var(--yellow);
+}
 .logo {
-  border-top: 4px solid #000;
+  border-top: 4px solid var(--red);
   padding: 40px 0 22px 0;
   float: left;
+	font-size: 48px;
+	line-height: 44px;
+	font-family: 'Permanent Marker', cursive;
 }
-
+.tagline {
+	margin: 66px 0 22px 0;
+	text-align: right;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
 /*
   ========================================
   Primary footer
   ========================================
 */
-
 .primary-footer {
   padding-bottom: 44px;
 	padding-top: 44px;
+	color: var(--red);
+	font-size: 14px;
+}
+ /*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
+/*
+  ========================================
+  Home
+  ========================================
+*/
+.hero {
+	line-height: 34px;
+  padding: 22px 80px 66px 80px;
+	text-align: center;
+}
+.hero h2 {
+	font-size: 30px;
+}
+.hero p {
+	font-size: 16px;
+	font-weight: 200;
+}
+.teaser a:hover h3 {
+	color: var(--darker-brown);
 }
 /*
   ========================================
