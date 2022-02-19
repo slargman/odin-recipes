@@ -149,7 +149,7 @@ h5 {
 	text-transform: uppercase;
 }
 strong {
-  font-weight: 400;
+  font-weight: 500;
 }
 cite, em {
   font-style: italic;
@@ -328,11 +328,15 @@ img.teaser {
 .steps li{
 	margin-bottom: 10px
 }
-
+.recipe-desc p {
+	margin-bottom: 0;
+}
 .recipe-desc q {
 	font-style: italic;
 }
-
+section.recipe {
+	margin-bottom: 12px;
+}
 /*
   ========================================
   Images
