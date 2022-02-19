@@ -209,7 +209,6 @@ p a {
 	background: #dce0e5;
 	padding: 33px 0 10px 0;
 	width: 100%;
-	border: #dce0e5 1px solid;
 	border-radius: 3px;
 	margin-bottom: 10px;
 }
@@ -328,6 +327,10 @@ img.teaser {
 }
 .steps li{
 	margin-bottom: 10px
+}
+
+.recipe-desc q {
+	font-style: italic;
 }
 
 /*
