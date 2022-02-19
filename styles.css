@@ -207,11 +207,11 @@ p a {
 }
 .row-alt {
 	background: #dce0e5;
-	padding: 33px 0 22px 0;
+	padding: 33px 0 10px 0;
 	width: 100%;
 	border: #dce0e5 1px solid;
 	border-radius: 3px;
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 }
 /*
   ========================================
@@ -307,14 +307,16 @@ img.teaser {
 .recipe-info li {
 	display: inline-block;
 	margin: 0 10px;
+	margin-bottom: 10px;
 	vertical-align: top;
+	color: --var(--lighter-charcoal);
 }
 .recipe-info li:last-child {
 	margin-right: 0;
 }
 .recipe-info strong {
-	color: #fff;
-	font-weight: 300;
+	color: var(--darker-charcoal);
+	font-weight: 00;
 }
 .ingredients ul {
 	list-style: disc;
